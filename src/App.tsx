@@ -7,8 +7,6 @@ import AllRecipes from './pages/AllRecipes'
 import RecipeSubmit from './pages/RecipeSubmit'
 
 
-
-
 function App() {
 	return (
 		<BrowserRouter>
