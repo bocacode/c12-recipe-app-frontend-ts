@@ -9,22 +9,18 @@ import Signup from './pages/Signup'
 import AllRecipes from './pages/AllRecipes'
 import RecipeSubmit from './pages/RecipeSubmit'
 
-
-
-
-
 function App() {
 	return (
 		<BrowserRouter>
-    <Header /> 
+			<Header />
 			<Routes>
-        <Route path='/' element={<button className='btn btn-primary'>This is home</button>} /> 
-				<Route path='/login' element={<Login />} />  
-				<Route path='/signup' element={<Signup />} />    
-				<Route path='/recipes' element={<AllRecipes />} />    
-				<Route path='/submit' element={<RecipeSubmit />} />    
-				</Routes>
-     <Footer /> 
+				<Route path='/' element={<button className='btn btn-primary'>This is home</button>} />
+				<Route path='/login' element={<Login />} />
+				<Route path='/signup' element={<Signup />} />
+				<Route path='/recipes' element={<AllRecipes />} />
+				<Route path='/submit' element={<RecipeSubmit />} />
+			</Routes>
+			<Footer />
 		</BrowserRouter>
 	)
 }
