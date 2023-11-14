@@ -12,7 +12,7 @@ function App() {
         <Route path='/' element={<button className='btn btn-primary'>This is home</button>} /> 
       </Routes>
 	  <Home />
-    //   {/* <Footer />  */}
+      {/* <Footer />  */}
 		</BrowserRouter>
 	)
 }
