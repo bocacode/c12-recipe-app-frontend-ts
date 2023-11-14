@@ -1,4 +1,4 @@
-// 7. 7-implement-recipe-browse-page-with-cards
+// 7. 
 import  Card  from "react-bootstrap/Card";
 import  Col  from "react-bootstrap/col";
 import Row from "react-bootstrap/Row";
