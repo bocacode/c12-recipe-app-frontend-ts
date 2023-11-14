@@ -1,5 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
+
+import Footer from './components/Footer'
+
 import Header from './components/Header'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
@@ -10,10 +13,10 @@ import UpdateRecipe from './pages/UpdateRecipes'
 
 
 
+
 function App() {
 	return (
 		<BrowserRouter>
-	
     <Header /> 
 			<Routes>
         <Route path='/' element={<button className='btn btn-primary'>This is home</button>} /> 
@@ -23,7 +26,7 @@ function App() {
 				<Route path='/submit' element={<RecipeSubmit />} /> 
 				<Route path='/update' element={<UpdateRecipe />} />
 				</Routes>
-      {/* <Footer />  */}
+     <Footer /> 
 		</BrowserRouter>
 	)
 }
