@@ -1,6 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import './App.css'
+import Home from './pages/Home'
+
 
 function App() {
 	return (
@@ -9,7 +11,8 @@ function App() {
 			<Routes>
         <Route path='/' element={<button className='btn btn-primary'>This is home</button>} /> 
       </Routes>
-      {/* <Footer />  */}
+	  <Home />
+    //   {/* <Footer />  */}
 		</BrowserRouter>
 	)
 }
