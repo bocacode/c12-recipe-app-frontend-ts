@@ -7,7 +7,7 @@ function App() {
 		<BrowserRouter>
     {/* <Header/>  */}
 			<Routes>
-        <Route path='/' element={<h2>This is home</h2>} /> 
+        <Route path='/' element={<button className='btn btn-primary'>This is home</button>} /> 
       </Routes>
       {/* <Footer />  */}
 		</BrowserRouter>
