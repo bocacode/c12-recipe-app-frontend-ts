@@ -5,6 +5,7 @@ import Login from './pages/Login'
 import Signup from './pages/Signup'
 import AllRecipes from './pages/AllRecipes'
 import RecipeSubmit from './pages/RecipeSubmit'
+import UpdateRecipe from './pages/UpdateRecipes'
 
 
 
@@ -19,7 +20,8 @@ function App() {
 				<Route path='/login' element={<Login />} />  
 				<Route path='/signup' element={<Signup />} />    
 				<Route path='/recipes' element={<AllRecipes />} />    
-				<Route path='/submit' element={<RecipeSubmit />} />    
+				<Route path='/submit' element={<RecipeSubmit />} /> 
+				<Route path='/update' element={<UpdateRecipe />} />
 				</Routes>
       {/* <Footer />  */}
 		</BrowserRouter>
