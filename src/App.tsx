@@ -12,7 +12,6 @@ import RecipeSubmit from './pages/RecipeSubmit'
 function App() {
 	return (
 		<BrowserRouter>
-	
     <Header /> 
 			<Routes>
         <Route path='/' element={<button className='btn btn-primary'>This is home</button>} /> 

@@ -1,15 +1,33 @@
-
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 export default function Header() {
 	return (
-		<header>
-			<ul>
-				<li><a href="/login" target="_blank" rel="noopener noreferrer"></a>Login</li>
-				<li><a href="/signup" target="_blank" rel="noopener noreferrer"></a>Signup</li>
-				<li><a href="/submit" target="_blank" rel="noopener noreferrer"></a>Submit</li>
-				<li><a href="/recipes" target="_blank" rel="noopener noreferrer"></a>Recipes</li>
-			</ul>
-		</header>
+		
+		<Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="/login">Login</Nav.Link>
+            <Nav.Link href="/signup">Signup</Nav.Link>
+                        <Nav.Link href="/submit">Submit</Nav.Link>
+                        <Nav.Link href="/recipes">Recipes</Nav.Link>
+           
+            </NavDropdown>
+          </Nav>
 
-
-	)
+          <Nav>
+            <Nav.Link href="#deets">More deets</Nav.Link>
+            <Nav.Link eventKey={2} href="#memes">
+              Dank memes
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
+
